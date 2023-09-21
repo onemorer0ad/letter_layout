@@ -1,0 +1,645 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>HTML Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style type="text/css">
+    body {
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      margin: 0;
+      padding: 0;
+      line-height: 100%;
+    }
+
+    [style*="Open Sans"] {
+      font-family: 'Open Sans', arial, sans-serif !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      outline: none;
+      text-decoration: none;
+      border: none;
+      -ms-interpolation-mode: bicubic;
+      max-width: 100% !important;
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+
+    .center {
+      padding-top: 30px;
+      padding-bottom: 32px;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    .pt-32 {
+      padding-top: 32px;
+    }
+
+    .pb-32 {
+      padding-bottom: 32px;
+    }
+
+    .pt-21 {
+      padding-top: 21px;
+    }
+
+    .pb-21 {
+      padding-bottom: 21px;
+    }
+
+    .pb-24 {
+      padding-bottom: 24px;
+    }
+
+    .pb-13 {
+      padding-bottom: 13px;
+    }
+
+    .pb-8 {
+      padding-bottom: 8px;
+    }
+
+    .pr-19 {
+      padding-right: 19px;
+    }
+
+    .mr-19 {
+      margin-right: 19px;
+    }
+
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    .logo {
+      padding-bottom: 28px;
+    }
+
+    .title {
+      font-family: Arial;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #515151;
+    }
+
+    .description {
+      font-family: Arial;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      color: #515151;
+    }
+
+    .artistes_title {
+      font-family: Arial;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #ffffff;
+    }
+
+    .mini-title {
+      font-family: Arial;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #FFFFFF;
+    }
+
+    .mini-descr {
+      font-family: Arial;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #FFFFFF;
+    }
+
+    .addition-title {
+      font-family: Arial;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #515151;
+      padding-bottom: 11px;
+    }
+
+    .addition-descr {
+      padding-top: 11px;
+      font-family: Arial;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #515151;
+    }
+
+    .btn {
+      width: 240px;
+      height: 45px;
+      border-radius: 48px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      text-align: center;
+      border-radius: 48px;
+      background-color: #9D5CD0;
+    }
+
+    .btn a {
+      padding-top: 23px;
+      padding-bottom: 23px;
+      font-family: Arial;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0em;
+      text-align: center;
+      line-height: 32px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .adress {
+      padding-top: 12px;
+      font-family: Arial;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #757575;
+    }
+
+    .footer_unsub {
+      font-family: Arial;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #757575
+    }
+
+    .footer_unsub a {
+      color: #9D5CD0;
+    }
+
+    .hidden-image {
+      display: none;
+    }
+
+
+    @media (max-width: 600px) {
+      .table-600 {
+        width: 280px !important;
+      }
+
+      .table-520 {
+        width: 244px !important;
+      }
+
+      .table-250,
+      table-240 {
+        width: 240px !important;
+      }
+
+      .mobile-top,
+      mobile-bottom {
+        display: block !important;
+      }
+
+      .mobile-bottom {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-top: 21px;
+      }
+
+      .table-520 td {
+        display: block;
+      }
+
+      .align-left-media {
+        text-align: left;
+      }
+
+      .width-244-media {
+        width: 244px !important;
+      }
+
+      .default-image {
+        display: none;
+      }
+
+      .new-image {
+        display: inline-block;
+      }
+
+      .default-image {
+        display: none;
+      }
+
+      .new-image {
+        display: inline-block;
+      }
+
+      .logo {
+        padding-top: 17px;
+        padding-bottom: 17px;
+      }
+
+      .center {
+        padding-top: 26px;
+      }
+
+      .mini-title {
+        padding-top: 10px;
+      }
+
+      .pb-32 {
+        padding-bottom: 0;
+      }
+
+      .pt-32 {
+        padding-top: 0;
+      }
+
+      .addition-descr {
+        padding-top: 15px;
+      }
+
+      .media-pb-32 {
+        padding-bottom: 32px;
+      }
+
+    }
+  </style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+  <div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое
+    письмо</div>
+  <table align="center" class="table-600" bgcolor="#ffffff" cellspacing=" 0" cellpadding="0" width="600">
+    <tr>
+      <td>
+        <table bgcolor="#000000" class="top table-600" cellspacing=" 0" cellpadding="0" width="600">
+          <tr align="center">
+            <td class="logo center" align="center">
+              <img class="default-image" src="https://i.postimg.cc/0QQTGh13/logo.png" alt="Default Image" />
+              <img class="new-image hidden-image" src="https://i.postimg.cc/rmPvfg8p/logo280.png" alt="New Image" />
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <img class="default-image" src="https://i.postimg.cc/R0VS8sz1/Rectangle-6.jpg" alt="Default Image" />
+              <img class="new-image hidden-image" src="https://i.postimg.cc/4nCjgdHk/Rectangle-6-1-280.jpg"
+                alt="New Image" />
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" align="center">
+              <table class="table-520" cellspacing=" 0" cellpadding="0" width="520">
+                <tr>
+                  <td align="left">
+                    <h2 style="font-family: 'Open Sans', arial, sans-serif !important; padding-top: 32px !important;"
+                      class="title pb-13">Торжество
+                      импрессионизма</h2>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pb-24" align="left">
+                    <p style="font-family: 'Open Sans', arial, sans-serif !important;" class="description">Опыт
+                      говорит нам, что семантический разбор внешних противодействий требует
+                      анализа новых
+                      принципов формирования материально-технической и кадровой базы. <br />
+                      <br />
+                      Задача организации, в особенности же внедрение современных методик, в своём классическом
+                      представлении, допускает внедрение глубокомысленных рассуждений. Есть над чем задуматься:
+                      элементы политического процесса преданы социально-демократической анафеме! Но интерактивные
+                      прототипы заблокированы в рамках своих собственных рациональных ограничений. Сторонники
+                      тоталитаризма в науке ограничены исключительно образом мышления.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#000000">
+                <tr>
+                  <td class="center" align="center">
+                    <table cellpadding="0" cellspacing="0" width="520" class="table-520">
+                      <tr>
+                        <td>
+                          <h2 style="font-family: 'Open Sans', arial, sans-serif !important;" class="artistes_title">
+                            Представленные художники</h2>
+                          <table cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td class="mobile-bottom">
+                                <img class="default-image pb-21 pt-21"
+                                  src="https://i.postimg.cc/K8bv7cqH/Rectangle-166.jpg" alt="Default Image" />
+                                <img class="new-image hidden-image"
+                                  src="https://i.postimg.cc/HsXk782M/Rectangle-166-5-280.jpg" alt="New Image" />
+                                <h3 class="mini-title pb-8"
+                                  style="font-family: 'Open Sans', arial, sans-serif !important;">
+                                  Поль Гоген
+                                </h3>
+                                <p class="mini-descr" style="font-family: 'Open Sans', arial, sans-serif !important;">
+                                  Прежде всего, разбавленное изрядной долей эмпатии, рациональное мышление в
+                                  значительной степени обусловливает важность укрепления моральных ценностей.
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td class="mobile-bottom">
+                                <img class="default-image pb-21 pt-21"
+                                  src="https://i.postimg.cc/fyS1pXLf/Rectangle-166-1.jpg" alt="Default Image" />
+                                <img class="new-image hidden-image"
+                                  src="https://i.postimg.cc/m2fbR2sg/Rectangle-167.png" alt="New Image" />
+                                <h3 class="mini-title pb-8"
+                                  style="font-family: 'Open Sans', arial, sans-serif !important;">
+                                  Огюст Ренуар
+                                </h3>
+                                <p class="mini-descr" style="font-family: 'Open Sans', arial, sans-serif !important;">
+                                  А также сделанные на базе <br /> интернет-аналитики выводы освещают чрезвычайно
+                                  интересные
+                                  особенности картины в целом.
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td class="p-full-32 mobile-bottom">
+                                <img class="default-image pb-21 pt-21"
+                                  src="https://i.postimg.cc/KcdYzDnF/Rectangle-166-2.jpg" alt="Default Image" />
+                                <img class="new-image hidden-image"
+                                  src="https://i.postimg.cc/Px0dCdvK/Rectangle-167-1.png" alt="New Image" />
+                                <h3 class="mini-title pb-8"
+                                  style="font-family: 'Open Sans', arial, sans-serif !important;">
+                                  Клод Моне
+                                </h3>
+                                <p class="mini-descr" style="font-family: 'Open Sans', arial, sans-serif !important;">
+                                  Современная методология разработки однозначно фиксирует необходимость системы
+                                  массового участия.
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td class="p-full-32 mobile-bottom">
+                                <img class="default-image pb-21 pt-21"
+                                  src="https://i.postimg.cc/MZcTqFfd/Rectangle-166-3.jpg" alt="Default Image" />
+                                <img class="new-image hidden-image"
+                                  src="https://i.postimg.cc/j2NtNBzT/Rectangle-167-2.png" alt="New Image" />
+                                <h3 class="mini-title pb-8"
+                                  style="font-family: 'Open Sans', arial, sans-serif !important;">
+                                  Эдуард Мане
+                                </h3>
+                                <p class="mini-descr" style="font-family: 'Open Sans', arial, sans-serif !important;">
+                                  Но социально-экономическое развитие является качественно новой ступенью вывода
+                                  текущих активов.
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td class="mobile-bottom">
+                                <img class=" default-image pb-21 pt-21"
+                                  src="https://i.postimg.cc/SsnyQnRJ/Rectangle-166-4.jpg" alt="Default Image" />
+                                <img class="new-image hidden-image"
+                                  src="https://i.postimg.cc/WpJ2Qqxy/Rectangle-167-3.png" alt="New Image" />
+                                <h3 class="mini-title pb-8"
+                                  style="font-family: 'Open Sans', arial, sans-serif !important;">
+                                  Винсент Ван Гог
+                                </h3>
+                                <p class="mini-descr" style="font-family: 'Open Sans', arial, sans-serif !important;">
+                                  Повседневная практика показывает, что разбавленное изрядной долей эмпатии,
+                                  рациональное мышление требует анализа поставленных обществом задач.
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff">
+          <tr>
+            <td class="center" align="center">
+              <table cellpadding="0" cellspacing="0" width="520" class="table-520">
+                <tr>
+                  <td>
+                    <h3 style="font-family: 'Open Sans', arial, sans-serif !important;" align="center"
+                      class="addition-title">И это ещё не всё!</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" width="33.33%" valign="top">
+                    <table width="138" class="width-244-media" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td class="mobile-bottom" style="padding-top: 0px !important;">
+                          <img src="galka.svg" alt="Галка" />
+                          <p class="addition-descr" style="font-family: 'Open Sans', arial, sans-serif !important;">
+                            Уникальные подборки работ с авторскими рецензиями
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td align="center" class="align-left-media" width="33.33%" valign="top">
+                    <table width="138" class="width-244-media" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td class="mobile-bottom">
+                          <img src="papka.svg" alt="Почта" />
+                          <p class="addition-descr" style="font-family: 'Open Sans', arial, sans-serif !important;">
+                            Возможность настроить нашу рассылку под свой личный вкус
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td align="right" class="align-left-media" width="33.33%" valign="top">
+                    <table width="138" class="width-244-media" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td class="mobile-bottom">
+                          <img src="strelka.svg" alt="Стрелка" />
+                          <p class="addition-descr" style="font-family: 'Open Sans', arial, sans-serif !important;">
+                            У вас есть пожелания и предложения?<br />
+                            Напишите нам в ответ на это письмо!
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#ffffff" class="pb-32 media-pb-32" align="center">
+              <table align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td align="center" class="btn">
+                    <a class="link" href="#" style="font-family: 'Open Sans', arial, sans-serif !important;">Узнать
+                      все
+                      подробности
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table cellpadding="0" cellspacing="0" width="600" class="table-600">
+          <tr>
+            <td>
+              <table cellpadding="0" cellspacing="0" width="600" class="table-600" bgcolor="#000000">
+                <tr>
+                  <td class="center" align="center" style="padding-bottom:16px">
+                    <table cellpadding="0" cellspacing="0" width="250" class="table-250">
+                      <tr>
+                        <td align="center" class="pb-16">
+                          <table width="143" cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td align="left">
+                                <a href="#">
+                                  <img class="pr-19" src="https://i.postimg.cc/CLGwKThH/vk.png" alt="" />
+                                </a>
+                              </td>
+                              <td align="center">
+                                <a href="#">
+                                  <img class="pr-19" src="https://i.postimg.cc/SKD0Mk3C/instagram.png" alt="" />
+                                </a>
+                              </td>
+                              <td align="right">
+                                <a href="#">
+                                  <img class="pr-19" src="https://i.postimg.cc/MGW2HvPz/fb.png" alt="" />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" class="pb-16">
+                          <p style="font-family: 'Open Sans', arial, sans-serif !important;" class="adress">Blanchard
+                            ©
+                            2020 / Все права защищены</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table cellpadding="0" cellspacing="0" width="600" class="table-600">
+                <tr>
+                  <td>
+                    <table cellpadding="0" cellspacing="0" width="600" class="table-600" bgcolor="#EBEBEB">
+                      <tr>
+                        <td align="center">
+                          <table cellpadding="0" cellspacing="0" width="250" class="table-250">
+                            <tr>
+                              <td align="center" class="pb-16">
+                                <p style="font-family: 'Open Sans', arial, sans-serif !important;" class="footer_unsub">
+                                  Вы
+                                  можете так же
+                                  <a style="font-family: 'Open Sans', arial, sans-serif !important;" href="">
+                                    отписаться
+                                    от
+                                    рассылки</a>
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
